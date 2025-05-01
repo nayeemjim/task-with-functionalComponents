@@ -5,7 +5,7 @@ import { FiSend } from "react-icons/fi";
 const Form = () => {
   return (
     <section className="mx-auto min-h-screen bg-gradient-to-br from-blue-900 to-blue-600 p-6 text-white md:p-12 lg:w-[1440px]">
-      <h2 className="mb-1 text-xl font-light">Live Ai f Coach</h2>
+      <h2 className="mb-1 text-xl font-light">Live Ai Coach</h2>
       <h1 className="mb-10 text-3xl font-bold md:text-4xl">
         Take a Suggestion Coaching
       </h1>
