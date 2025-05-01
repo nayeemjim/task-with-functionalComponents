@@ -30,7 +30,7 @@ function TestimonialSlider() {
   const { text, author, role } = testimonials[index];
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16 text-center">
+    <div className="px-6 pt-29 pb-21 text-center">
       <p className="mb-10 text-2xl leading-relaxed font-light text-gray-900 md:text-3xl">
         “ {text} ”
       </p>

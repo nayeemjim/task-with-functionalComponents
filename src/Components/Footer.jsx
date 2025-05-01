@@ -10,16 +10,16 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mx-auto bg-gray-100 text-gray-800 lg:w-[1440px]">
+    <footer className="bg-gray-100 text-gray-800">
       {/* Newsletter CTA */}
       <div className="mx-auto mt-16 mb-10 max-w-6xl rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 p-10 text-center text-white">
-        <h2 className="mb-2 text-2xl font-semibold md:text-3xl">
+        <h2 className="mb-3 text-[38px] font-semibold md:text-3xl">
           Ready to Hire Smarter?
         </h2>
-        <p className="mb-6 text-sm">
+        <p className="mb-12 text-[16px]">
           Unlock Exclusive Insights. Subscribe to Our Newsletter
         </p>
-        <button className="rounded-full bg-yellow-400 px-6 py-2 font-medium text-black transition hover:bg-yellow-300">
+        <button className="rounded-full bg-yellow-400 px-6 py-2 text-xl font-medium text-black transition hover:bg-yellow-300">
           Join Now
         </button>
       </div>

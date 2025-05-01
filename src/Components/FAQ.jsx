@@ -30,26 +30,26 @@ function FAQ() {
   };
 
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16 lg:w-[1440px]">
+    <section className="px-6 pt-41">
       <h3 className="mb-2 text-sm font-medium text-blue-600">
         Frequently asked questions
       </h3>
-      <h2 className="mb-10 text-3xl leading-snug font-light text-gray-900 md:text-4xl">
+      <h2 className="mb-[80px] leading-snug font-light text-gray-900 md:text-4xl lg:text-6xl">
         Constant collaboration is how we roll. <br /> Let's see if we are a good
         fit.
       </h2>
 
-      <div className="space-y-6">
+      <div>
         {faqs.map((faq) => (
           <div
             key={faq.id}
-            className="cursor-pointer border-b pb-4"
+            className="cursor-pointer border-b pr-8 pb-4 text-[32px]"
             onClick={() => toggle(faq.id)}
           >
             <div className="flex items-start justify-between">
               <div className="flex space-x-4">
                 <span className="font-semibold text-yellow-500">0{faq.id}</span>
-                <p className="text-lg font-medium text-gray-900">
+                <p className="mb-4 text-[40px] font-medium text-gray-900">
                   {faq.question}
                 </p>
               </div>

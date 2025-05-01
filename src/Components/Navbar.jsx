@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="mx-auto flex w-full items-center justify-between border-b border-gray-200 bg-white py-[45px] shadow-sm lg:w-[1440px]">
+    <header className="mx-auto flex w-full items-center justify-between border-b border-gray-200 bg-white py-[45px] shadow-sm lg:max-w-[1440px]">
       {/* Logo for the given task*/}
       <div className="flex items-center">
         <img src="../public/img/salesRank.png" alt="SalesRank.AI Logo" />
