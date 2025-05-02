@@ -1,4 +1,8 @@
 import React from "react";
+import miniBot from "../../public/img/image (3).png";
+import backUpTable from "../../public/img/backup_table.png";
+import threeDOt from "../../public/img/atr.png";
+import aiBot from "../../public/img/image.png";
 
 const HomeSection = () => {
   return (
@@ -15,7 +19,7 @@ const HomeSection = () => {
           <div className="flex items-center justify-center gap-3 rounded-xl">
             <div className="lg:mr-[68px]">
               <img
-                src="../public/img/image (3).png"
+                src={miniBot}
                 alt="Mini Bot"
                 className="w-full object-cover"
               />
@@ -30,7 +34,7 @@ const HomeSection = () => {
           <div className="mt-23 flex gap-4 lg:gap-[55px]">
             <div className="flex items-center gap-2 rounded-lg px-2 py-2 lg:gap-[35px]">
               <img
-                src="../public/img/backup_table.png"
+                src={backUpTable}
                 alt="Representation"
                 className="w-full rounded-2xl bg-white object-cover p-2 shadow-md"
               />
@@ -46,7 +50,7 @@ const HomeSection = () => {
             <div className="flex items-center gap-4 rounded-lg px-2 py-2 lg:gap-[35px]">
               <div className="flex items-center justify-center rounded-full text-sm font-bold text-gray-800">
                 <img
-                  src="../public/img/atr.png"
+                  src={threeDOt}
                   alt="Representation"
                   className="w-full rounded-2xl bg-white object-cover p-4 shadow-md"
                 />
@@ -66,7 +70,7 @@ const HomeSection = () => {
         {/* Right Section for the task*/}
         <div className="relative">
           <img
-            src="../public/img/image.png"
+            src={aiBot}
             alt="AI Bot"
             className="w-full rounded-2xl object-cover"
           />

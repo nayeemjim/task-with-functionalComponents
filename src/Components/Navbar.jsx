@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../public/img/salesRank.png";
 
 const Navbar = () => {
   return (
@@ -6,7 +7,7 @@ const Navbar = () => {
       <div className="font-manrope mx-auto flex w-full items-center justify-between py-[45px] shadow-sm lg:max-w-[1440px]">
         {/* Logo for the given task*/}
         <div className="flex items-center">
-          <img src="../public/img/salesRank.png" alt="SalesRank.AI Logo" />
+          <img src={logo} alt="SalesRank.AI Logo" />
         </div>
 
         {/* Nav Links for the given task*/}

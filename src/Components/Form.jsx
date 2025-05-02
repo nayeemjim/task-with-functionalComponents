@@ -3,6 +3,8 @@ import React from "react";
 import { FaThumbsUp, FaThumbsDown, FaRegCopy } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { IoReload } from "react-icons/io5";
+import btn1 from "../../public/img/Vector (1).png";
+import btn2 from "../../public/img/Vector.png";
 
 const Form = () => {
   const tags = [
@@ -107,19 +109,11 @@ const Form = () => {
                 <h3 className="pb-5 text-3xl font-semibold">Quick Actions</h3>
                 <div className="grid grid-cols-2 gap-4 pb-[30px]">
                   <button className="flex flex-col rounded-md bg-white p-3 text-sm hover:bg-gray-200">
-                    <img
-                      src="../public/img/Vector (1).png"
-                      alt="Script"
-                      className="mb-1 h-6 w-6"
-                    />
+                    <img src={btn1} alt="Script" className="mb-1 h-6 w-6" />
                     Generate Script
                   </button>
                   <button className="flex flex-col rounded-md bg-white p-3 text-sm hover:bg-gray-200">
-                    <img
-                      src="../public/img/Vector.png"
-                      alt="Pitch"
-                      className="mb-1 h-6 w-6"
-                    />
+                    <img src={btn2} alt="Pitch" className="mb-1 h-6 w-6" />
                     Practice Pitch
                   </button>
                 </div>

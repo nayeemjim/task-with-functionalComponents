@@ -1,9 +1,11 @@
 import React from "react";
+import robot1 from "../../public/img/image (1).png";
+import robot2 from "../../public/img/image (2).png";
 
 const courses = [
   {
     id: 1,
-    image: "../public/img/image (1).png",
+    image: robot1,
     duration: "4 Weeks",
     level: "Beginner",
     author: "John Smith",
@@ -13,7 +15,7 @@ const courses = [
   },
   {
     id: 2,
-    image: "../public/img/image (2).png",
+    image: robot2,
     duration: "4 Weeks",
     level: "Beginner",
     author: "John Smith",
