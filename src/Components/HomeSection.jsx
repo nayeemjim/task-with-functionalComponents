@@ -28,11 +28,11 @@ const HomeSection = () => {
           </div>
 
           <div className="mt-23 flex gap-4 lg:gap-[55px]">
-            <div className="flex items-center gap-2 rounded-lg bg-white px-4 py-2 shadow-sm lg:gap-[35px]">
+            <div className="flex items-center gap-2 rounded-lg px-2 py-2 lg:gap-[35px]">
               <img
                 src="../public/img/backup_table.png"
                 alt="Representation"
-                className="w-full object-cover"
+                className="w-full rounded-2xl bg-white object-cover p-2 shadow-md"
               />
               <div>
                 <p className="font-semibold text-[#05131D] lg:text-[40px]">
@@ -43,12 +43,12 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 rounded-lg bg-white px-4 py-2 shadow-sm lg:gap-[35px]">
-              <div className="flex items-center justify-center rounded-full bg-gray-100 text-sm font-bold text-gray-800">
+            <div className="flex items-center gap-4 rounded-lg px-2 py-2 lg:gap-[35px]">
+              <div className="flex items-center justify-center rounded-full text-sm font-bold text-gray-800">
                 <img
                   src="../public/img/atr.png"
                   alt="Representation"
-                  className="w-full object-cover"
+                  className="w-full rounded-2xl bg-white object-cover p-4 shadow-md"
                 />
               </div>
               <div>
@@ -71,13 +71,13 @@ const HomeSection = () => {
             className="w-full rounded-2xl object-cover"
           />
 
-          {/* Floating card */}
+          {/* Floating card for the task which position is absolute */}
           <div className="absolute bottom-[-50px] rounded-xl bg-white px-6 py-4 shadow-lg lg:left-[-150px]">
             <div className="flex justify-between font-semibold text-[#00245F] lg:text-[50px]">
               <p>721+</p>
               <p>1000+</p>
             </div>
-            <p className="mt-2 font-medium text-gray-800 lg:text-[28px]">
+            <p className="mt-2 font-medium text-[#05131DB2] lg:text-[28px]">
               Growth is our priority.
             </p>
             <p className="mt-1 text-gray-500 lg:text-[17px]">

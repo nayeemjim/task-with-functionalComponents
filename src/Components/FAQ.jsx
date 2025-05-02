@@ -30,7 +30,7 @@ const faqs = [
 ];
 
 function FAQ() {
-  const [openId, setOpenId] = useState(1); // Initially open first item
+  const [openId, setOpenId] = useState(1);
 
   const toggle = (id) => {
     setOpenId(openId === id ? null : id);

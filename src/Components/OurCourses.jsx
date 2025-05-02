@@ -45,7 +45,7 @@ const OurCourses = () => {
           </button>
         </div>
 
-        {/* Cards */}
+        {/* Cards for the task  */}
         <div className="grid gap-6 md:grid-cols-2">
           {courses.map((course) => (
             <div

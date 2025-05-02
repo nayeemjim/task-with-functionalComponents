@@ -27,7 +27,7 @@ export default function Footer() {
           </button>
         </div>
 
-        {/* Footer content */}
+        {/* Footer content for the task */}
         <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-4">
           {/* Logo & About */}
           <div>
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation part*/}
           <div>
             <h4 className="mb-9 font-semibold">Navigation</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -60,7 +60,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* License */}
           <div>
             <h4 className="mb-9 font-semibold">License</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -70,7 +69,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact part*/}
           <div>
             <h4 className="mb-9 font-semibold">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-600">

@@ -1,4 +1,4 @@
-import { Volume, VolumeIcon } from "lucide-react";
+import { VolumeIcon } from "lucide-react";
 import React from "react";
 import { FaThumbsUp, FaThumbsDown, FaRegCopy } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
@@ -12,7 +12,7 @@ const Form = () => {
     "Negotiation tips",
   ];
   return (
-    <section className="bg-gradient-to-br from-blue-900 to-blue-600">
+    <section className="bg-gradient-to-br from-blue-900 to-blue-600 pb-18">
       {" "}
       <div className="font-manrope mx-auto p-4 text-white lg:max-w-[1440px]">
         <h2 className="font-ques mb-1 text-2xl font-light">Live Ai Coach</h2>
@@ -20,7 +20,7 @@ const Form = () => {
           Take a Suggestion Coaching
         </h1>
 
-        <div className="flex flex-col gap-8 md:flex-row">
+        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2">
           <div>
             {/*lg:grid-cols-2 grid  Chat Section for the task  flex flex-col md:flex-row*/}
             <div className="flex min-h-[500px] flex-1 flex-col justify-between rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md">
@@ -63,9 +63,9 @@ const Form = () => {
           </div>
 
           {/* Side Panel for the another side */}
-          <div className="flex w-full flex-col gap-6 lg:w-[500px] lg:flex-row">
+          <div className="flex w-full flex-col gap-6 lg:grid lg:grid-cols-[1fr_9fr]">
             {/* Vertical Icons for the task */}
-            <ul className="mr-6 flex items-center justify-center gap-4 rounded-full bg-[#F2F3F3] md:flex-col">
+            <ul className="flex items-center justify-center gap-4 rounded-full bg-[#F2F3F3] lg:h-[300px] lg:flex-col">
               <li className="p-2 text-gray-800">
                 <IoReload />
               </li>
@@ -85,13 +85,13 @@ const Form = () => {
             </ul>
             <div>
               {/* Analysis part for the task */}
-              <div className="mb-6 w-full rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md lg:w-[400px]">
+              <div className="mb-6 w-full rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md">
                 <h3 className="pb-5 font-semibold">Real-time Analysis</h3>
                 <div className="rounded-xl bg-white p-5">
                   <p className="text-sm text-gray-600">Confidence Level</p>
                   <div className="mt-1 h-2 w-full rounded-full bg-gray-200">
                     <p className="h-2 w-[60%] rounded-full bg-green-500"></p>
-                    <span>60%</span>
+                    {/* <span>60%</span> */}
                   </div>
                 </div>
                 <div className="mt-5 rounded-xl bg-white p-5 text-sm">
