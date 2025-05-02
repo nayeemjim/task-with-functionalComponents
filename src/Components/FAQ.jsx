@@ -38,7 +38,7 @@ function FAQ() {
 
   return (
     <section className="bg-[#FAFAFA]">
-      <div className="mx-auto px-6 pt-41 lg:max-w-[1440px]">
+      <div className="mx-auto px-6 pt-41 font-[Questrial] lg:max-w-[1440px]">
         <h3 className="mb-2 text-sm font-medium text-blue-600">
           Frequently asked questions
         </h3>

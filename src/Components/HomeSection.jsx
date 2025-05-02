@@ -3,10 +3,10 @@ import React from "react";
 const HomeSection = () => {
   return (
     <section className="bg-gradient-to-r from-[#6797FF] to-[#FF6FB9]">
-      <div className="mx-auto flex flex-col items-center justify-between px-4 pb-[86px] lg:max-w-[1440px] lg:flex-row">
+      <div className="font-manrope mx-auto flex flex-col items-center justify-between px-4 pb-[86px] lg:max-w-[1440px] lg:flex-row">
         {/* Left Section  bg-gradient-to-br from-white to-blue-50*/}
         <div className="">
-          <h1 className="mb-[26px] text-3xl leading-tight font-bold text-[#111111] lg:text-[80px]">
+          <h1 className="mb-[26px] text-3xl leading-tight font-[500] text-[#111111] lg:text-[80px]">
             Your AI-
             <br />
             Powered <br />

@@ -10,7 +10,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links for the given task*/}
-        <nav className="hidden text-sm text-gray-700 lg:ml-[89px] lg:flex lg:grow">
+        <nav className="font-[Plus Jakarta Sans] hidden text-sm text-gray-700 lg:ml-[89px] lg:flex lg:grow">
           <ul className="flex">
             <li>
               {" "}
