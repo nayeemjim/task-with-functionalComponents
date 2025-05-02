@@ -20,9 +20,9 @@ const Form = () => {
           Take a Suggestion Coaching
         </h1>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="flex flex-col gap-8 md:flex-row">
           <div>
-            {/* Chat Section for the task  flex flex-col md:flex-row*/}
+            {/*lg:grid-cols-2 grid  Chat Section for the task  flex flex-col md:flex-row*/}
             <div className="flex min-h-[500px] flex-1 flex-col justify-between rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md">
               <div>
                 <p className="mb-2 text-[18px] font-bold">AI Sales Coach</p>
@@ -65,7 +65,7 @@ const Form = () => {
           {/* Side Panel for the another side */}
           <div className="flex flex-col gap-6 md:w-[300px] lg:flex-row">
             {/* Vertical Icons for the task */}
-            <div className="mr-6 inline-flex items-center justify-center gap-4 rounded-full bg-[#F2F3F3] md:flex-col">
+            <div className="mr-6 flex items-center justify-center gap-4 rounded-full bg-[##F2F3F3] md:flex-col">
               <div className="p-2 text-gray-800">
                 <IoReload />
               </div>
