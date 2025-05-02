@@ -14,16 +14,16 @@ const Form = () => {
   return (
     <section className="bg-gradient-to-br from-blue-900 to-blue-600">
       {" "}
-      <div className="mx-auto min-h-screen p-6 text-white md:p-12 lg:max-w-[1440px]">
+      <div className="mx-auto p-6 text-white md:p-12 lg:max-w-[1440px]">
         <h2 className="mb-1 text-2xl font-light">Live Ai Coach</h2>
         <h1 className="mb-10 text-3xl font-bold md:text-4xl lg:text-6xl">
           Take a Suggestion Coaching
         </h1>
 
-        <div className="flex flex-col gap-8 md:flex-row">
+        <div className="grid gap-8 lg:grid-cols-2">
           <div>
-            {/* Chat Section for the task*/}
-            <div className="flex min-h-[400px] flex-1 flex-col justify-between rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md">
+            {/* Chat Section for the task  flex flex-col md:flex-row*/}
+            <div className="flex min-h-[500px] flex-1 flex-col justify-between rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md">
               <div>
                 <p className="mb-2 text-[18px] font-bold">AI Sales Coach</p>
                 <div className="mb-4 rounded-md bg-gray-100 p-3 text-[18px]">
@@ -85,7 +85,7 @@ const Form = () => {
             </div>
             <div>
               {/* Analysis part for the task */}
-              <div className="mb-6 rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md lg:w-[450px]">
+              <div className="mb-6 w-full rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md lg:w-[550px]">
                 <h3 className="pb-5 font-semibold">Real-time Analysis</h3>
                 <div className="rounded-xl bg-white p-5">
                   <p className="text-sm text-gray-600">Confidence Level</p>
