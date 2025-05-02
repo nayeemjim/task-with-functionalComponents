@@ -8,7 +8,8 @@ import OurCourses from "./Components/OurCourses";
 
 function App() {
   return (
-    <div className="mx-auto lg:max-w-[1440px]">
+    // <div className="bg-gradient-to-r from-[#86ABFA] to-[#6fbeff00]">
+    <div>
       <Navbar />
       <HomeSection />
       <Form />
@@ -17,6 +18,7 @@ function App() {
       <TestimonialSlider />
       <Footer />
     </div>
+    // </div>
   );
 }
 export default App;

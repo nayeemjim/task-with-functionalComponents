@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { ChevronUp, ChevronDown } from "lucide-react";
+import {
+  ChevronUp,
+  ChevronDown,
+  Plus,
+  PlusIcon,
+  MinusIcon,
+  PlusCircleIcon,
+} from "lucide-react";
 
 const faqs = [
   {
@@ -30,44 +37,48 @@ function FAQ() {
   };
 
   return (
-    <section className="px-6 pt-41">
-      <h3 className="mb-2 text-sm font-medium text-blue-600">
-        Frequently asked questions
-      </h3>
-      <h2 className="mb-[80px] leading-snug font-light text-gray-900 md:text-4xl lg:text-6xl">
-        Constant collaboration is how we roll. <br /> Let's see if we are a good
-        fit.
-      </h2>
+    <section className="bg-[#FAFAFA]">
+      <div className="mx-auto px-6 pt-41 lg:max-w-[1440px]">
+        <h3 className="mb-2 text-sm font-medium text-blue-600">
+          Frequently asked questions
+        </h3>
+        <h2 className="mb-[80px] leading-snug font-light text-gray-900 md:text-4xl lg:text-6xl">
+          Constant collaboration is how we roll. <br /> Let's see if we are a
+          good fit.
+        </h2>
 
-      <div>
-        {faqs.map((faq) => (
-          <div
-            key={faq.id}
-            className="cursor-pointer border-b pr-8 pb-4 text-[32px]"
-            onClick={() => toggle(faq.id)}
-          >
-            <div className="flex items-start justify-between">
-              <div className="flex space-x-4">
-                <span className="font-semibold text-yellow-500">0{faq.id}</span>
-                <p className="mb-4 text-[40px] font-medium text-gray-900">
-                  {faq.question}
+        <div>
+          {faqs.map((faq) => (
+            <div
+              key={faq.id}
+              className="cursor-pointer border-b pr-8 pb-4 lg:text-[32px]"
+              onClick={() => toggle(faq.id)}
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex space-x-4">
+                  <span className="font-semibold text-[#8B7D4C]">
+                    0{faq.id}
+                  </span>
+                  <p className="mb-4 font-medium text-gray-900 lg:text-[40px]">
+                    {faq.question}
+                  </p>
+                </div>
+                <div className="mt-1">
+                  {openId === faq.id ? (
+                    <MinusIcon className="w-5text-gray-500 h-5" />
+                  ) : (
+                    <PlusIcon className="h-5 w-5 text-gray-500" />
+                  )}
+                </div>
+              </div>
+              {openId === faq.id && faq.answer && (
+                <p className="mt-3 ml-10 max-w-2xl text-sm text-gray-600 lg:text-xl">
+                  {faq.answer}
                 </p>
-              </div>
-              <div className="mt-1">
-                {openId === faq.id ? (
-                  <ChevronUp className="h-5 w-5 text-gray-500" />
-                ) : (
-                  <ChevronDown className="h-5 w-5 text-gray-500" />
-                )}
-              </div>
+              )}
             </div>
-            {openId === faq.id && faq.answer && (
-              <p className="mt-3 ml-10 max-w-2xl text-sm text-gray-600">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

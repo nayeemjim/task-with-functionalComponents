@@ -30,42 +30,44 @@ function TestimonialSlider() {
   const { text, author, role } = testimonials[index];
 
   return (
-    <div className="px-6 pt-29 pb-21 text-center">
-      <p className="mb-10 text-2xl leading-relaxed font-light text-gray-900 md:text-3xl">
-        “ {text} ”
-      </p>
+    <section className="bg-[#FAFAFA]">
+      <div className="mx-auto px-6 pt-29 pb-21 text-center lg:max-w-[1440px]">
+        <p className="mb-10 text-2xl leading-relaxed font-light text-gray-900 md:text-3xl">
+          “ {text} ”
+        </p>
 
-      <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-        {/* Avatar + Info */}
-        <div className="flex items-center space-x-4">
-          <div className="h-10 w-10 rounded-full bg-gray-300"></div>
-          <div className="text-left">
-            <p className="text-sm font-semibold text-gray-800">{author}</p>
-            <p className="text-sm text-gray-500">{role}</p>
+        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          {/* Avatar + Info */}
+          <div className="flex items-center space-x-4">
+            <div className="h-10 w-10 rounded-full bg-gray-300"></div>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-gray-800">{author}</p>
+              <p className="text-sm text-gray-500">{role}</p>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={prevSlide}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-400 text-gray-700 hover:bg-gray-100"
+            >
+              <ArrowLeft className="h-4 w-4" />
+            </button>
+            <span className="text-sm text-gray-600">
+              {String(index + 1).padStart(2, "0")}/
+              {String(total).padStart(2, "0")}
+            </span>
+            <button
+              onClick={nextSlide}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 text-white hover:bg-blue-800"
+            >
+              <ArrowRight className="h-4 w-4" />
+            </button>
           </div>
         </div>
-
-        {/* Navigation */}
-        <div className="flex items-center space-x-4">
-          <button
-            onClick={prevSlide}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-400 text-gray-700 hover:bg-gray-100"
-          >
-            <ArrowLeft className="h-4 w-4" />
-          </button>
-          <span className="text-sm text-gray-600">
-            {String(index + 1).padStart(2, "0")}/
-            {String(total).padStart(2, "0")}
-          </span>
-          <button
-            onClick={nextSlide}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 text-white hover:bg-blue-800"
-          >
-            <ArrowRight className="h-4 w-4" />
-          </button>
-        </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default TestimonialSlider;
