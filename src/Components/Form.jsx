@@ -14,7 +14,7 @@ const Form = () => {
   return (
     <section className="bg-gradient-to-br from-blue-900 to-blue-600">
       {" "}
-      <div className="font-manrope mx-auto p-6 text-white md:p-12 lg:max-w-[1440px]">
+      <div className="font-manrope mx-auto p-4 text-white lg:max-w-[1440px]">
         <h2 className="font-ques mb-1 text-2xl font-light">Live Ai Coach</h2>
         <h1 className="font-ques mb-10 text-3xl font-bold md:text-4xl lg:text-6xl">
           Take a Suggestion Coaching
@@ -63,36 +63,35 @@ const Form = () => {
           </div>
 
           {/* Side Panel for the another side */}
-          <div className="flex flex-col gap-6 md:w-[300px] lg:flex-row">
+          <div className="flex w-full flex-col gap-6 lg:w-[500px] lg:flex-row">
             {/* Vertical Icons for the task */}
-            <div className="mr-6 flex items-center justify-center gap-4 rounded-full bg-[##F2F3F3] md:flex-col">
-              <div className="p-2 text-gray-800">
+            <ul className="mr-6 flex items-center justify-center gap-4 rounded-full bg-[#F2F3F3] md:flex-col">
+              <li className="p-2 text-gray-800">
                 <IoReload />
-              </div>
-              <div className="p-2 text-gray-800">
+              </li>
+              <li className="p-2 text-gray-800">
                 <FaThumbsUp />
-              </div>
-              <div className="p-2 text-gray-800">
+              </li>
+              <li className="p-2 text-gray-800">
                 <FaThumbsDown />
-              </div>
-              <div className="p-2 text-gray-800">
+              </li>
+              <li className="p-2 text-gray-800">
                 <FaRegCopy />
-              </div>
+              </li>
 
-              <div className="p-2 text-gray-800">
+              <li className="p-2 text-gray-800">
                 <VolumeIcon />
-              </div>
-            </div>
+              </li>
+            </ul>
             <div>
               {/* Analysis part for the task */}
-              <div className="mb-6 w-full rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md lg:w-[550px]">
+              <div className="mb-6 w-full rounded-lg bg-[#EFEFEF] p-4 text-gray-800 shadow-md lg:w-[400px]">
                 <h3 className="pb-5 font-semibold">Real-time Analysis</h3>
                 <div className="rounded-xl bg-white p-5">
                   <p className="text-sm text-gray-600">Confidence Level</p>
                   <div className="mt-1 h-2 w-full rounded-full bg-gray-200">
-                    <p className="h-2 w-[60%] rounded-full bg-green-500">
-                      <span>60%</span>
-                    </p>
+                    <p className="h-2 w-[60%] rounded-full bg-green-500"></p>
+                    <span>60%</span>
                   </div>
                 </div>
                 <div className="mt-5 rounded-xl bg-white p-5 text-sm">
