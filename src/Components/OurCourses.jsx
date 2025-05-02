@@ -26,7 +26,7 @@ const courses = [
 const OurCourses = () => {
   return (
     <section className="bg-[#FAFAFA]">
-      <div className="mx-auto bg-white px-6 pt-12 lg:max-w-[1440px]">
+      <div className="font-manrope mx-auto bg-white px-6 pt-12 lg:max-w-[1440px]">
         {/* Header for the card making section*/}
         <div className="mb-8 flex items-center justify-between pb-12">
           <div>

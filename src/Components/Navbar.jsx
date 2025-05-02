@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <header className="bg-gradient-to-r from-[#6797FF] to-[#FF6FB9]">
-      <div className="mx-auto flex w-full items-center justify-between py-[45px] shadow-sm lg:max-w-[1440px]">
+      <div className="font-manrope mx-auto flex w-full items-center justify-between py-[45px] shadow-sm lg:max-w-[1440px]">
         {/* Logo for the given task*/}
         <div className="flex items-center">
           <img src="../public/img/salesRank.png" alt="SalesRank.AI Logo" />

@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#6797FFff] to-[#FF6FB9ff] py-[32px]">
-      <div className="mx-auto text-gray-800 lg:max-w-[1440px]">
+      <div className="font-manrope mx-auto text-gray-800 lg:max-w-[1440px]">
         {/* Newsletter CTA */}
         <div className="mt-16 mb-10 rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 p-10 text-center text-white">
           <h2 className="mb-3 text-[38px] font-semibold md:text-3xl">

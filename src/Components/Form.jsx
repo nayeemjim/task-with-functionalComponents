@@ -14,9 +14,9 @@ const Form = () => {
   return (
     <section className="bg-gradient-to-br from-blue-900 to-blue-600">
       {" "}
-      <div className="mx-auto p-6 text-white md:p-12 lg:max-w-[1440px]">
-        <h2 className="mb-1 text-2xl font-light">Live Ai Coach</h2>
-        <h1 className="mb-10 text-3xl font-bold md:text-4xl lg:text-6xl">
+      <div className="font-manrope mx-auto p-6 text-white md:p-12 lg:max-w-[1440px]">
+        <h2 className="font-ques mb-1 text-2xl font-light">Live Ai Coach</h2>
+        <h1 className="font-ques mb-10 text-3xl font-bold md:text-4xl lg:text-6xl">
           Take a Suggestion Coaching
         </h1>
 
